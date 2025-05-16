@@ -309,7 +309,7 @@ plot_nn
 
 ![](FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/nearest-neigh-plot-1.png)<!-- -->
 
-\# Change of cell type composition in space
+# Change of cell type composition in space
 
 Another common task in spatial biology is to know how a particular cell
 type(s) abundance change as we move away from a boundary. Here we use
