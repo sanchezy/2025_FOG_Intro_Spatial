@@ -96,7 +96,7 @@ plot_tissue
 plot1 + plot2
 ```
 
-![](/Users/ysanchez/Documents/Projects-analysis/FOG_2025_Introduction_Spatial_Analysis/2025_FOG_Intro_Spatial/FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/before-after-scaling-1.png)<!-- -->
+![](FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/before-after-scaling-1.png)<!-- -->
 
 # Normalisation
 
@@ -148,7 +148,7 @@ plot5 <-   ggplot(melt(data[,3:8])) +
 plot1 + plot4 + plot2 + plot5 + plot_layout(ncol = 2)
 ```
 
-![](/Users/ysanchez/Documents/Projects-analysis/FOG_2025_Introduction_Spatial_Analysis/2025_FOG_Intro_Spatial/FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/effects-on-scaling-1.png)<!-- -->
+![](FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/effects-on-scaling-1.png)<!-- -->
 
 # Clustering to identify cell types
 
@@ -219,7 +219,7 @@ plot6 <- ggplot(melt(data[,3:9])) +
 plot6
 ```
 
-![](/Users/ysanchez/Documents/Projects-analysis/FOG_2025_Introduction_Spatial_Analysis/2025_FOG_Intro_Spatial/FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/boxplots-markers-1.png)<!-- -->
+![](2025_FOG_Intro_Spatial/FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/boxplots-markers-1.png)<!-- -->
 
 *Are the markers corresponding to the expected cell types?*
 
@@ -234,7 +234,7 @@ plot7 <- ggplot(melt(kmeans$centers)) +
 plot7
 ```
 
-![](/Users/ysanchez/Documents/Projects-analysis/FOG_2025_Introduction_Spatial_Analysis/2025_FOG_Intro_Spatial/FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/heatmap-of-clusters-1.png)<!-- -->
+![](FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/heatmap-of-clusters-1.png)<!-- -->
 
 # Visualisation - dimensionality reduction
 
@@ -261,7 +261,7 @@ plot_umap_feature <-   ggplot(umap) +
 plot_umap +  plot_umap_feature
 ```
 
-![](/Users/ysanchez/Documents/Projects-analysis/FOG_2025_Introduction_Spatial_Analysis/2025_FOG_Intro_Spatial/FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/umap-1.png)<!-- -->
+![](FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/umap-1.png)<!-- -->
 
 ``` r
 # overlay clusters on the umap and tissue
@@ -275,7 +275,7 @@ plot_tissue_celltypes <- ggplot(data,aes(CellX,CellY,colour=cluster)) +
 plot_umap_celltypes + plot_tissue_celltypes
 ```
 
-![](/Users/ysanchez/Documents/Projects-analysis/FOG_2025_Introduction_Spatial_Analysis/2025_FOG_Intro_Spatial/FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/umap-tissue-by-celltype-1.png)<!-- -->
+![](FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/umap-tissue-by-celltype-1.png)<!-- -->
 
 # Neighborhood analysis
 
@@ -307,7 +307,8 @@ plot_nn <-  ggplot(melt(nebs)) +
 plot_nn
 ```
 
-![](/Users/ysanchez/Documents/Projects-analysis/FOG_2025_Introduction_Spatial_Analysis/2025_FOG_Intro_Spatial/FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/nearest-neigh-plot-1.png)<!-- -->
+![](FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/nearest-neigh-plot-1.png)<!-- -->
+
 \# Change of cell type composition in space
 
 Another common task in spatial biology is to know how a particular cell
@@ -337,7 +338,7 @@ other cell types.
  boxplot_distances 
 ```
 
-![](/Users/ysanchez/Documents/Projects-analysis/FOG_2025_Introduction_Spatial_Analysis/2025_FOG_Intro_Spatial/FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/distance-to-nn-1.png)<!-- -->
+![](FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/distance-to-nn-1.png)<!-- -->
 <br> The boxplot above is informative for median distance to Epi but how
 do the numbers of each cell phenotype change as we move away from Epi?
 <br>
@@ -370,7 +371,7 @@ plot_distances <- ggplot(melt(table)) +
 plot_distances
 ```
 
-![](/Users/ysanchez/Documents/Projects-analysis/FOG_2025_Introduction_Spatial_Analysis/2025_FOG_Intro_Spatial/FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/epithelial-spatial-relationships-1.png)<!-- -->
+![](FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/epithelial-spatial-relationships-1.png)<!-- -->
 
 *What can you observe?*
 
@@ -406,25 +407,29 @@ sessionInfo()
     ## [1] stats     graphics  grDevices utils     datasets  methods   base     
     ## 
     ## other attached packages:
-    ##  [1] Seurat_5.0.1       SeuratObject_5.0.1 sp_2.1-3           patchwork_1.2.0    RANN_2.6.1         uwot_0.1.16        Matrix_1.6-5       ggplot2_3.5.2     
-    ##  [9] reshape2_1.4.4     rmarkdown_2.25    
+    ##  [1] Seurat_5.0.1       SeuratObject_5.0.1 sp_2.1-3           patchwork_1.2.0    RANN_2.6.1         uwot_0.1.16       
+    ##  [7] Matrix_1.6-5       ggplot2_3.5.2      reshape2_1.4.4     rmarkdown_2.25    
     ## 
     ## loaded via a namespace (and not attached):
-    ##   [1] deldir_2.0-2           pbapply_1.7-2          gridExtra_2.3          rlang_1.1.6            magrittr_2.0.3         RcppAnnoy_0.0.22      
-    ##   [7] spatstat.geom_3.2-8    matrixStats_1.2.0      ggridges_0.5.6         compiler_4.3.2         png_0.1-8              vctrs_0.6.5           
-    ##  [13] stringr_1.5.1          pkgconfig_2.0.3        fastmap_1.1.1          ellipsis_0.3.2         labeling_0.4.3         utf8_1.2.4            
-    ##  [19] promises_1.2.1         purrr_1.0.4            xfun_0.42              jsonlite_1.8.8         goftest_1.2-3          highr_0.10            
-    ##  [25] later_1.3.2            spatstat.utils_3.0-4   irlba_2.3.5.1          parallel_4.3.2         cluster_2.1.6          R6_2.5.1              
-    ##  [31] ica_1.0-3              spatstat.data_3.0-4    stringi_1.8.4          RColorBrewer_1.1-3     reticulate_1.35.0      parallelly_1.36.0     
-    ##  [37] lmtest_0.9-40          scattermore_1.2        Rcpp_1.0.13            knitr_1.45             tensor_1.5             future.apply_1.11.1   
-    ##  [43] zoo_1.8-12             sctransform_0.4.1      FNN_1.1.4              httpuv_1.6.14          splines_4.3.2          igraph_2.0.1.1        
-    ##  [49] tidyselect_1.2.1       abind_1.4-5            rstudioapi_0.17.1      yaml_2.3.8             spatstat.random_3.2-2  codetools_0.2-19      
-    ##  [55] miniUI_0.1.1.1         spatstat.explore_3.2-6 listenv_0.9.1          lattice_0.22-5         tibble_3.2.1           plyr_1.8.9            
-    ##  [61] shiny_1.8.0            withr_3.0.1            ROCR_1.0-11            evaluate_0.23          Rtsne_0.17             future_1.33.1         
-    ##  [67] fastDummies_1.7.3      survival_3.5-7         polyclip_1.10-6        fitdistrplus_1.1-11    pillar_1.9.0           KernSmooth_2.23-22    
-    ##  [73] plotly_4.10.4          generics_0.1.3         RcppHNSW_0.6.0         munsell_0.5.0          scales_1.3.0           globals_0.16.2        
-    ##  [79] xtable_1.8-4           glue_1.7.0             lazyeval_0.2.2         tools_4.3.2            data.table_1.16.0      RSpectra_0.16-1       
-    ##  [85] leiden_0.4.3.1         dotCall64_1.1-1        cowplot_1.1.3          grid_4.3.2             tidyr_1.3.1            colorspace_2.1-0      
-    ##  [91] nlme_3.1-164           cli_3.6.5              spatstat.sparse_3.0-3  spam_2.10-0            fansi_1.0.6            viridisLite_0.4.2     
-    ##  [97] dplyr_1.1.4            gtable_0.3.4           digest_0.6.34          progressr_0.14.0       ggrepel_0.9.5          htmlwidgets_1.6.4     
-    ## [103] farver_2.1.1           htmltools_0.5.7        lifecycle_1.0.4        httr_1.4.7             mime_0.12              MASS_7.3-60.0.1
+    ##   [1] deldir_2.0-2           pbapply_1.7-2          gridExtra_2.3          rlang_1.1.6            magrittr_2.0.3        
+    ##   [6] RcppAnnoy_0.0.22       spatstat.geom_3.2-8    matrixStats_1.2.0      ggridges_0.5.6         compiler_4.3.2        
+    ##  [11] png_0.1-8              vctrs_0.6.5            stringr_1.5.1          pkgconfig_2.0.3        fastmap_1.1.1         
+    ##  [16] ellipsis_0.3.2         labeling_0.4.3         utf8_1.2.4             promises_1.2.1         purrr_1.0.4           
+    ##  [21] xfun_0.42              jsonlite_1.8.8         goftest_1.2-3          highr_0.10             later_1.3.2           
+    ##  [26] spatstat.utils_3.0-4   irlba_2.3.5.1          parallel_4.3.2         cluster_2.1.6          R6_2.5.1              
+    ##  [31] ica_1.0-3              spatstat.data_3.0-4    stringi_1.8.4          RColorBrewer_1.1-3     reticulate_1.35.0     
+    ##  [36] parallelly_1.36.0      lmtest_0.9-40          scattermore_1.2        Rcpp_1.0.13            knitr_1.45            
+    ##  [41] tensor_1.5             future.apply_1.11.1    zoo_1.8-12             sctransform_0.4.1      FNN_1.1.4             
+    ##  [46] httpuv_1.6.14          splines_4.3.2          igraph_2.0.1.1         tidyselect_1.2.1       abind_1.4-5           
+    ##  [51] rstudioapi_0.17.1      yaml_2.3.8             spatstat.random_3.2-2  codetools_0.2-19       miniUI_0.1.1.1        
+    ##  [56] spatstat.explore_3.2-6 listenv_0.9.1          lattice_0.22-5         tibble_3.2.1           plyr_1.8.9            
+    ##  [61] shiny_1.8.0            withr_3.0.1            ROCR_1.0-11            evaluate_0.23          Rtsne_0.17            
+    ##  [66] future_1.33.1          fastDummies_1.7.3      survival_3.5-7         polyclip_1.10-6        fitdistrplus_1.1-11   
+    ##  [71] pillar_1.9.0           KernSmooth_2.23-22     plotly_4.10.4          generics_0.1.3         RcppHNSW_0.6.0        
+    ##  [76] munsell_0.5.0          scales_1.3.0           globals_0.16.2         xtable_1.8-4           glue_1.7.0            
+    ##  [81] lazyeval_0.2.2         tools_4.3.2            data.table_1.16.0      RSpectra_0.16-1        leiden_0.4.3.1        
+    ##  [86] dotCall64_1.1-1        cowplot_1.1.3          grid_4.3.2             tidyr_1.3.1            colorspace_2.1-0      
+    ##  [91] nlme_3.1-164           cli_3.6.5              spatstat.sparse_3.0-3  spam_2.10-0            fansi_1.0.6           
+    ##  [96] viridisLite_0.4.2      dplyr_1.1.4            gtable_0.3.4           digest_0.6.34          progressr_0.14.0      
+    ## [101] ggrepel_0.9.5          htmlwidgets_1.6.4      farver_2.1.1           htmltools_0.5.7        lifecycle_1.0.4       
+    ## [106] httr_1.4.7             mime_0.12              MASS_7.3-60.0.1
