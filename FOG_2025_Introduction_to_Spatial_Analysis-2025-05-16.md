@@ -68,7 +68,7 @@ plot_tissue <- ggplot(data, aes(CellX,CellY)) +
 plot_tissue
 ```
 
-![](/Users/ysanchez/Documents/Projects-analysis/FOG_2025_Introduction_Spatial_Analysis/2025_FOG_Intro_Spatial/FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/viewthetissue-1.png)<!-- -->
+![](FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-gfm/viewthetissue-1.png)<!-- -->
 
 ``` r
 # colour-code by a marker of your choice
