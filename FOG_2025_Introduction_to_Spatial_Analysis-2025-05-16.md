@@ -11,15 +11,15 @@ from a real pancreatic cancer dataset provided by Adam Bryce. It is a
 multiplex (mIF) experiment using the following markers to detect some
 important cell types:
 
-# CD4 and FOXP3: Tregs
+  * CD4 and FOXP3: Tregs
 
-# CD68: Macrophage
+  * CD68: Macrophage
 
-# PDL1: Functional / Immune-oncology
+  * PDL1: Functional / Immune-oncology
 
-# aSMA: Fibroblast
+  * aSMA: Fibroblast
 
-# panCK: Epithelium
+  * panCK: Epithelium
 
 *IMPORTANT. Before the session*: Please download the folder (link
 provided) and install the list of packages requiered in Rstudio (i.e
@@ -59,7 +59,7 @@ First, we are going to check the data (i.e. is the tissue we expect?).
       geom_point()
     plot_tissue
 
-![](/Users/ysanchez/Documents/Projects-analysis/FOG_2025_Introduction_Spatial_Analysis/notebooks-html/FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-markdown_strict/viewthetissue-1.png)
+![](../FOG_2025_Introduction_to_Spatial_Analysis-2025-05-16_files/figure-markdown_strict/viewthetissue-1.png)
 
     # colour-code by a marker of your choice
     # [insert you code here]
